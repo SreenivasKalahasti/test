@@ -10,6 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
+				"fileName": "titanic.csv",
 				"container": "demo-container"
 			},
 			"columnDelimiter": ",",
