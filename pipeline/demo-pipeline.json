@@ -59,22 +59,6 @@
 						"type": "DatasetReference"
 					}
 				]
-			},
-			{
-				"name": "Execute Pipeline",
-				"type": "ExecutePipeline",
-				"dependsOn": [
-					{
-						"activity": "Copy-Demo-Data-new",
-						"dependencyConditions": [
-							"Succeeded"
-						]
-					}
-				],
-				"userProperties": [],
-				"typeProperties": {
-					"waitOnCompletion": true
-				}
 			}
 		],
 		"annotations": []
