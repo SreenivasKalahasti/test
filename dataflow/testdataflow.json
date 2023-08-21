@@ -42,10 +42,10 @@
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false) ~> source1",
 				"source(allowSchemaDrift: true,",
-				"     validateSchema: false,",
+				"     validateSchema: true,",
 				"     format: 'table',",
 				"     store: 'sqlserver',",
-				"     schemaName: '',",
+				"     schemaName: 'dbo',",
 				"     tableName: '',",
 				"     isolationLevel: 'READ_UNCOMMITTED') ~> source2"
 			]
