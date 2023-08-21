@@ -5,14 +5,40 @@
 		"typeProperties": {
 			"sources": [
 				{
+					"dataset": {
+						"referenceName": "DelimitedText1",
+						"type": "DatasetReference"
+					},
 					"name": "source1"
+				},
+				{
+					"name": "source2"
 				}
 			],
 			"sinks": [],
 			"transformations": [],
 			"scriptLines": [
+				"source(output(",
+				"          pclass as string,",
+				"          survived as string,",
+				"          name as string,",
+				"          sex as string,",
+				"          age as string,",
+				"          sibsp as string,",
+				"          parch as string,",
+				"          ticket as string,",
+				"          fare as string,",
+				"          cabin as string,",
+				"          embarked as string,",
+				"          boat as string,",
+				"          body as string,",
+				"          {home.dest} as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> source1",
 				"source(allowSchemaDrift: true,",
-				"     validateSchema: false) ~> source1"
+				"     validateSchema: false) ~> source2"
 			]
 		}
 	}
