@@ -46,7 +46,7 @@
 				"     format: 'table',",
 				"     store: 'sqlserver',",
 				"     schemaName: 'dbo',",
-				"     tableName: '',",
+				"     tableName: 'dim_customer',",
 				"     isolationLevel: 'READ_UNCOMMITTED') ~> source2"
 			]
 		}
