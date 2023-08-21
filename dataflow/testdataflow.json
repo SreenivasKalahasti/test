@@ -12,6 +12,10 @@
 					"name": "source1"
 				},
 				{
+					"linkedService": {
+						"referenceName": "SqlServer1",
+						"type": "LinkedServiceReference"
+					},
 					"name": "source2"
 				}
 			],
@@ -38,7 +42,12 @@
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false) ~> source1",
 				"source(allowSchemaDrift: true,",
-				"     validateSchema: false) ~> source2"
+				"     validateSchema: false,",
+				"     format: 'table',",
+				"     store: 'sqlserver',",
+				"     schemaName: '',",
+				"     tableName: '',",
+				"     isolationLevel: 'READ_UNCOMMITTED') ~> source2"
 			]
 		}
 	}
