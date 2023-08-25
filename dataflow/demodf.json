@@ -10,6 +10,9 @@
 						"type": "LinkedServiceReference"
 					},
 					"name": "sourcedf"
+				},
+				{
+					"name": "jsonsource"
 				}
 			],
 			"sinks": [],
@@ -20,7 +23,9 @@
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false,",
 				"     format: 'json',",
-				"     documentForm: 'documentPerLine') ~> sourcedf"
+				"     documentForm: 'documentPerLine') ~> sourcedf",
+				"source(allowSchemaDrift: true,",
+				"     validateSchema: false) ~> jsonsource"
 			]
 		}
 	}
