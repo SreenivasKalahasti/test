@@ -40,7 +40,7 @@
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false,",
 				"     documentForm: 'documentPerLine') ~> jsonsource",
-				"jsonsource foldDown(unroll(),",
+				"jsonsource foldDown(unroll(family_detail, family_detail),",
 				"     mapColumn(",
 				"          Name,",
 				"          family_detail",
