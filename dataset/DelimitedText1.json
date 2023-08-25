@@ -14,7 +14,7 @@
 				"container": "demoblob"
 			},
 			"columnDelimiter": "|",
-			"compressionCodec": "bzip2",
+			"compressionCodec": "gzip",
 			"escapeChar": "\\",
 			"firstRowAsHeader": true,
 			"quoteChar": "\""
