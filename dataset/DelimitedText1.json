@@ -10,10 +10,10 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "titanic.csv",
-				"container": "demo-container"
+				"fileName": "health_pipe.csv",
+				"container": "demoblob"
 			},
-			"columnDelimiter": ",",
+			"columnDelimiter": "|",
 			"compressionCodec": "bzip2",
 			"escapeChar": "\\",
 			"firstRowAsHeader": true,
