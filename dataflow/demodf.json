@@ -5,10 +5,6 @@
 		"typeProperties": {
 			"sources": [
 				{
-					"linkedService": {
-						"referenceName": "AzureBlobStorage1",
-						"type": "LinkedServiceReference"
-					},
 					"name": "sourcedf"
 				},
 				{
@@ -26,12 +22,8 @@
 				}
 			],
 			"scriptLines": [
-				"source(useSchema: false,",
-				"     allowSchemaDrift: true,",
-				"     validateSchema: false,",
-				"     ignoreNoFilesFound: false,",
-				"     format: 'json',",
-				"     documentForm: 'documentPerLine') ~> sourcedf",
+				"source(allowSchemaDrift: true,",
+				"     validateSchema: false) ~> sourcedf",
 				"source(output(",
 				"          Name as string,",
 				"          family_detail as (Name as string, Relationship as string)[]",
