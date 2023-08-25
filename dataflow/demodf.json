@@ -5,6 +5,10 @@
 		"typeProperties": {
 			"sources": [
 				{
+					"dataset": {
+						"referenceName": "DelimitedText1",
+						"type": "DatasetReference"
+					},
 					"name": "sourcedf"
 				},
 				{
@@ -23,7 +27,8 @@
 			],
 			"scriptLines": [
 				"source(allowSchemaDrift: true,",
-				"     validateSchema: false) ~> sourcedf",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> sourcedf",
 				"source(output(",
 				"          Name as string,",
 				"          family_detail as (Name as string, Relationship as string)[]",
