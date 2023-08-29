@@ -1,0 +1,7 @@
+{
+	"name": "synapse-ws-custstgacct--synapse-workspace-1601-dlstoragedemo1981",
+	"properties": {
+		"privateLinkResourceId": "/subscriptions/762303de-6362-421c-855b-ac9fd4f17060/resourceGroups/demo/providers/Microsoft.Storage/storageAccounts/dlstoragedemo1981",
+		"groupId": "dfs"
+	}
+}
